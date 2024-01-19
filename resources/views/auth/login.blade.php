@@ -5,7 +5,8 @@
  
     <div class="card p-4 col-4">
       <legend>Login Your Account</legend>
-     <form>
+     <form method="post" action="{{route('login')}}">
+      @csrf
          <div class="mb-3">
            <label for="exampleInputEmail1" class="form-label">Email address</label>
            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
